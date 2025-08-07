@@ -12,4 +12,5 @@ const home = ({sideNavbar}) => {
     </div>
   )
 }
-export default home;
+
+export default home
