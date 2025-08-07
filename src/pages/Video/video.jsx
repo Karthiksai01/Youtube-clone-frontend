@@ -15,7 +15,7 @@ function Video() {
 
 
   const fetchvideoById = async () => {
-    await axios.get(`http://localhost:4000/api/getVideoById/${id}`).then((response) => {
+    await axios.get(`https://youtube-clone-backend-va2g.onrender.com/api/getVideoById/${id}`).then((response) => {
       console.log(response);
       setData(response.data.VideoById);
       setvideoUrl(response?.data?.VideoById?.videoLink)
@@ -24,7 +24,7 @@ function Video() {
     })
   }
   const getCommentsByVideoId = async () => {
-    await axios.get(`http://localhost:4000/commentApi/comment/${id}`,{
+    await axios.get(`https://youtube-clone-backend-va2g.onrender.com/commentApi/comment/${id}`,{
   withCredentials: true
 }).then((response) => {
       console.log(response);
@@ -45,7 +45,7 @@ function Video() {
   };
 
   try {
-    const resp = await axios.post("http://localhost:4000/commentApi/comment", body, { withCredentials: true });
+    const resp = await axios.post("https://youtube-clone-backend-va2g.onrender.com/commentApi/comment", body, { withCredentials: true });
     const newComment = resp.data.comment;
     setComments(prev => [newComment, ...prev]); 
     setmessage(""); // Clear input

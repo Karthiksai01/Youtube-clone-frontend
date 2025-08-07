@@ -13,7 +13,7 @@ const Profile = ({ sideNavbar }) => {
 
   const fetchProfileData = async () => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/${id}/channel`);
+      const response = await axios.get(`https://youtube-clone-backend-va2g.onrender.com/api/${id}/channel`);
       console.log("Response:", response);
 
       const videos = response.data.videoByUser;

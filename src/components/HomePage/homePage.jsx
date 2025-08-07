@@ -7,7 +7,7 @@ const homePage = ({ sideNavbar }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/allvideos').then(res => {
+    axios.get('https://youtube-clone-backend-va2g.onrender.com/api/allvideos').then(res => {
       console.log(res.data)
       setData(res.data);
     }).catch(err => {

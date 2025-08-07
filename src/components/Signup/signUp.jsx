@@ -43,7 +43,7 @@ function SignUp({ setLoginModel }) {
 
   const handleSignUp = async () => {
     try {
-      const res = await axios.post('http://localhost:4000/auth/signup', {
+      const res = await axios.post('https://youtube-clone-backend-va2g.onrender.com/auth/signup', {
         userName: signUpForm.username,
         password: signUpForm.password,
         channelName: signUpForm.channelname,

@@ -13,7 +13,7 @@ function Login({ setLoginModel }) {
         setLoginForm({...loginForm, [e.target.name]: e.target.value})
     }
     const handleLoginFunc=async ()=>{
-      await axios.post("http://localhost:4000/auth/login",loginForm,{ withCredentials: true }).then((response=>{
+      await axios.post("https://youtube-clone-backend-va2g.onrender.com/auth/login",loginForm,{ withCredentials: true }).then((response=>{
         console.log(response)
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("userId", response.data.user._id);
