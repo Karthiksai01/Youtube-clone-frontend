@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.navbar{
+    height: 56px;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(5, 5, 5);
+    z-index: 10;
+}
+.navbar-left{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+}
+.navbarHamberger{
+    width: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_youtubeImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+.navbar-youtubeImage{
+    color: red;
+
+}
+.navbar-utubeTitle{
+    font-size: 20px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-family: "Lora",serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Navbar middle*/
+
+/* Parent navbar should be a flex container */
+
+/* Centered middle section */
+.navbar-middle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Searchbox container */
+.navbar-searchbox {
+  display: flex;
+  align-items: center;
+  background-color: #3b3838;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+/* Input field */
+.navbar-searchboxInput {
+  border: none;
+  background-color: rgb(57, 54, 54);
+  color: white;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Icon container */
+.navbar_searchIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  cursor: pointer;
+  color: #f9f8f8;
+}
+
+.navbar_mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+/* Navbar right*/
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between icons and image */
+}
+
+/* Optional hover effect for icons */
+.navbar-right svg {
+  transition: transform 0.2s ease;
+}
+
+.navbar-right svg:hover {
+  transform: scale(1.1);
+}
+
+/* Profile image (logo) styling */
+.navbar-right-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+.navbar-right-logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar-model{
+    position: absolute;
+    top: 55px;
+    width: 10%;
+    z-index: 20;
+    color: white;
+}
+.navbar-model-option{
+    background-color: #6d6b6b;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: #3b3838;
+    }
+}

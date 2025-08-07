@@ -1,0 +1,86 @@
+.videoUpload {
+  padding-top: 56px; /* Top padding, likely to clear a fixed navbar [2, 3] */
+  width: 100%; /* Full width [2, 3] */
+  display: flex; /* Flexbox for layout [2, 3] */
+  flex-direction: column; /* Stack items vertically [2, 3] */
+  align-items: center; /* Center items horizontally [2, 3] */
+  height: 92vh; /* Height relative to viewport height [2, 3] */
+  background-color: black; /* Black background [2, 3] */
+  color: white; /* White text color [2, 3] */
+  font-family: Oswald, sans-serif; /* Font family, though specific import not detailed [3] */
+  font-optical-sizing: auto; /* Font property [3] */
+  font-weight: 400; /* Font weight [3] */
+  font-style: normal; /* Font style [3] */
+}
+
+.uploadBox {
+  width: 45%; /* Width of the card [4] */
+  border-radius: 5px; /* Rounded corners for the card [4] */
+  margin-top: 20px; /* Top margin for spacing [4] */
+  box-shadow: 0.5px 0.5px 8px white; /* White box shadow to create a border effect [4] */
+  padding: 25px; /* Internal padding [4] */
+  display: flex; /* Flexbox for internal layout [3] */
+  flex-direction: column; /* Stack items vertically [3] */
+  align-items: center; /* Center items horizontally [3] */
+}
+
+.uploadVideoTitle {
+  display: flex; /* Flexbox for aligning content [4] */
+  width: 100%; /* Full width within its parent [4] */
+  justify-content: center; /* Center content horizontally [4] */
+  align-items: center; /* Center content vertically [4] */
+  font-size: 28px; /* Font size for the title [4] */
+  gap: 10px; /* Gap between YouTube icon and text (inferred from common flex design) */
+}
+
+.uploadForm {
+  display: flex; /* Flexbox for input fields [5] */
+  flex-direction: column; /* Stack input fields vertically [5] */
+  gap: 30px; /* Gap between input fields [5] */
+  margin-top: 30px; /* Top margin [5] */
+  align-items: center; /* Center input fields horizontally [5] */
+}
+
+.uploadFormInputs {
+  width: 100%; /* Width of each input field [5] */
+  height: 40px; /* Height of input fields [5] */
+  padding: 0px 20px; /* Padding for input text [5] */
+  font-size: 16px; /* Font size of input text [5] */
+  color: white; /* Text color in input fields [5] */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height [5] */
+  background-color: #222222; /* Dark background for input fields [5] */
+  border: none; /* No border for input fields [5] */
+  border-radius: 5px; /* Rounded corners for input fields [5] */
+}
+
+.uploadFormInputs::placeholder { /* Style for placeholder text (inferred) */
+  color: #aaa;
+}
+
+.uploadFormInputs:focus { /* Style when input is focused (inferred) */
+  outline: none;
+}
+
+.uploadButtons {
+  display: flex; /* Flexbox for buttons [1] */
+  gap: 30px; /* Gap between buttons [1] */
+  justify-content: center; /* Center buttons horizontally [1] */
+  margin-top: 30px; /* Top margin for spacing [1] */
+}
+
+.uploadButtonForm {
+  padding: 10px 20px; /* Padding for buttons [1] */
+  border: 1px solid white; /* White border for buttons [1] */
+  font-weight: 500; /* Font weight [1] */
+  font-size: 18px; /* Font size [1] */
+  border-radius: 5px; /* Rounded corners for buttons [1] */
+  cursor: pointer; /* Pointer cursor on hover [1] */
+  color: white; /* White text color [1] */
+  text-decoration: none; /* No underline, especially important for Link tag [1] */
+  transition: all 0.3s ease; /* Smooth transition for hover effect (inferred) */
+}
+
+.uploadButtonForm:hover {
+  background-color: white; /* White background on hover [1] */
+  color: black; /* Black text on hover [1] */
+}
